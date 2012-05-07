@@ -7,6 +7,8 @@ $(function() {
 });
 
 function vidMode(){
-	var vidURL = $('.entry-content iframe').attr('src');
-	$('.entry-content iframe').attr('src',vidURL + '?wmode=transparent');
+	$('.entry-content iframe').each(function(){
+		var vidURL = $(this).attr('src');
+		$(this).attr('src',vidURL + '?wmode=transparent');
+	});
 }

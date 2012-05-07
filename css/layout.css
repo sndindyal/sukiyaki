@@ -403,6 +403,10 @@ input#s {
 	font-weight: normal;
 }
 
+.singular .entry-title {
+	line-height: 35px;
+}
+
 .singular .entry-meta .edit-link a {
 	position: absolute;
 	bottom: 20px;
@@ -546,7 +550,7 @@ input#s {
 
 #nav-single {
 	top: auto;
-	width: auto;
+	width: 160px;
 }
 
 #content nav {
