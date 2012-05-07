@@ -1,0 +1,257 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {
+	position: relative;
+}
+
+#parallax-zone {
+	position: relative;
+	width: 940px;
+	overflow: hidden;
+	height: 2980px;
+	margin-top: -30px;
+	padding: 20px;
+	margin: 0 auto 30px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0 0 10px #000 inset;
+	border-bottom: 1px solid #724685;
+	z-index: 1;
+	background: #101010;
+}
+
+/* Nav
+*****************************************************************/
+
+nav#para {
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	right: 0px;
+	margin-top: 0;	
+}
+nav#para li {
+	position: relative;
+}
+nav#para a {
+	padding: 5px 10px;
+	margin: 5px 0;
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	background-color: #090909;
+	box-shadow: 0 0 2px #000;
+	-moz-transition: 0.3s ease-in;
+	-webkit-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+	float: right;
+}
+nav#para a.load {
+	/* color: #B3D54A; */
+}
+nav#para a:hover, nav#para a.active {
+	color: #B3D54A;
+	padding-right: 30px;
+}
+nav#para h1 {
+	position: absolute;
+	right: 22px;
+	top: -7px;
+	display: none;
+	padding: 4px 20px 4px 7px;;
+	color: #fff;
+	white-space: nowrap;
+	background: transparent url('../img/nav-arrow.png') 100% 50% no-repeat;
+	display: none;
+	}
+nav.next-prev {
+	margin: 20px 0 0 0;
+	}
+	a.prev,
+	a.next {
+		display: block;
+		width: 15px;
+		height: 11px;
+		text-indent: -9999px;
+		}
+	a.prev {
+		margin: 0 auto 5px auto;
+		background: transparent url('../img/scroll-arrow-up.png') 0 0 no-repeat;
+		}
+		a.prev:hover {
+			background: transparent url('../img/scroll-arrow-up.png') 0 -11px no-repeat;
+			}
+	a.next {
+		margin: 5px auto 0 auto;
+		background: transparent url('../img/scroll-arrow-down.png') -1px 0 no-repeat;
+		}
+		a.next:hover {
+			background: transparent url('../img/scroll-arrow-down.png') -1px -11px no-repeat;
+			}
+
+/* Parallax
+*****************************************************************/
+
+/* para-hold */
+#para-hold {
+	z-index: 4;
+	position: relative;
+	max-width: 940px;
+	padding: 0;
+	margin: 0 auto;
+	line-height: 24px;
+	font-size: 14px;
+	}
+#para-hold p {
+	padding: 5px 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #56536f;
+	color: #d6ecfb;
+}	
+	#para-hold article {
+		width: 300px;
+		height: 400px;
+		background-color: #c1c1c1;		
+		}
+		#manned-flight ,
+		#frameless-parachute,
+		#english-channel,
+		#about,
+		#jerard,
+		#helena {
+			padding: 32px 10px;
+			}
+		#manned-flight {
+			position: absolute;
+			top: 0px;
+			}
+		#frameless-parachute {
+			position: absolute;
+			top: 500px;
+			}
+		#english-channel {
+			position: absolute;
+			top: 1000px;
+			}
+			#para-hold h1 {
+				margin: 0 0 5px 0;
+				font-size: 52px;
+				font-family: Georgia, serif;
+				font-weight: normal;
+				line-height: 60px;
+				}
+		#about {
+			position: absolute;
+			top: 1500px;
+			}			
+			#jerard {
+			position: absolute;
+			top: 2000px;
+			}
+			#helena {
+			position: absolute;
+			top: 2500px;
+			}
+/* foreground (ballons/landscape) */
+#parallax-bg3 {
+	z-index: 3;
+	position: absolute;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 940px;
+	margin-left: -470px; /* move left by half element's width */
+	}
+	/* balloon */
+	#bg3-1 {
+		position: absolute;
+		top: 555px;
+		left: 355px;
+		}
+	#bg3-2 {
+		position: absolute;
+		top: 1455px;
+		left: 321px;
+		}
+	#bg3-3 {
+		position: absolute;
+		top: 2355px;
+		left: 403px;
+		}
+	#bg3-4 {
+		position: absolute;
+		top: 3355px;
+		left: 555px;
+		}
+/* midground (clouds) */
+#parallax-bg2 {
+	z-index: 2;
+	position: absolute;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg2-1 {
+		position: absolute;
+		top: 605px;
+		left: 500px;
+		}
+	#bg2-2 {
+		position: absolute;
+		top: 300px;
+		left: 1150px;
+		}
+	#bg2-3 {
+		position: absolute;
+		top: 543px;
+		left: -35px;
+		}
+	#bg2-4 {
+		position: absolute;
+		top: 1180px;
+		left: 250px;
+		}
+	#bg2-5 {
+		position: absolute;
+		top: 900px;
+		left: 890px;
+		}
+/* background (clouds) */
+#parallax-bg1 {
+	z-index: 1;
+	position: absolute;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg1-1 {
+		position: absolute;
+		top: 185px;
+		left: 500px;
+		}
+	#bg1-2 {
+		position: absolute;
+		top: 440px;
+		left: 795px;
+		}
+	#bg1-3 {
+		position: absolute;
+		top: 900px;
+		left: -220px;
+		}
+	#bg1-4 {
+		position: absolute;
+		top: 1020px;
+		left: 450px;
+		}
+
